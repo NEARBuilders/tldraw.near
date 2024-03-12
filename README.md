@@ -1,4 +1,6 @@
-# the monorepo
+# tldraw.near
+
+—> [near-bos-webcomponent](https://github.com/petersalomonsen/near-bos-webcomponent) with [tldraw](https://tldraw.dev/) installed, deployed to [web4](https://web4.near.page/), to provide a sandbox for builders wanting to create apps with the canvas.
 
 ## before you begin
 

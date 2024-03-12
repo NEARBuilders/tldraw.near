@@ -11,14 +11,8 @@ const style = {
 
 return (
   <>
-  <p>hello</p>
-    {/* <h1>canvas 1</h1>
     <div style={{ position: "relative", width: "400px", height: "400px" }}>
       <Widget src="tldraw.near/widget/Tldraw" props={{ style }} />
     </div>
-    <h1>canvas 2</h1>
-    <div style={{ position: "relative", width: "400px", height: "400px" }}>
-      <Widget src="tldraw.near/widget/Tldraw" props={{ style }} />
-    </div> */}
   </>
 );

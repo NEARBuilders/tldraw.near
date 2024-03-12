@@ -1,1 +1,0 @@
-return <button onClick={() => console.log("do something")}>click</button>;
