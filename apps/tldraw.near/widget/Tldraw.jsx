@@ -14,5 +14,6 @@ return (
         overflow: "hidden",
       }
     }
+    {...props}
   />
 );
