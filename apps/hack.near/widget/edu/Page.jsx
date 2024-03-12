@@ -1,1 +1,0 @@
-const hashtag = props.hashtag ?? "edu"; return (<Widget src="hack.near/widget/Test.Page" props={{hashtag: hashtag}} />);

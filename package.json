@@ -7,8 +7,9 @@
   "private": true,
   "scripts": {
     "init": "git submodule update --init --recursive && pnpm install && pnpm run build:bw",
-    "dev": "pnpm run bw workspace dev",
-    "dev:gateway": "npx nx run-many --target=dev --projects=viewer",
+    "dev": "concurrently \"pnpm run dev:gateway\" \"pnpm run dev:apps\"",
+    "dev:gateway": "cd near-bos-webcomponent && pnpm run start",
+    "dev:apps": "pnpm run bw workspace dev",
     "bw": "./node_modules/bos-workspace/bin/bw.js",
     "build": "pnpm run bw workspace build",
     "build:vm": "pnpm --filter ./VM run build",
