@@ -1,7 +1,7 @@
 const { style } = props;
 
 return (
-  <Tldraw
+  <Canvas
     style={
       style ?? {
         position: "fixed",
@@ -14,6 +14,7 @@ return (
         overflow: "hidden",
       }
     }
+    context={context}
     {...props}
   />
 );
