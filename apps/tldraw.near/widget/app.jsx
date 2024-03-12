@@ -1,12 +1,19 @@
 const style = {
-  position: "fixed",
+  position: "absolute",
   top: 0,
   left: 0,
   bottom: 0,
   right: 0,
-  width: "60%",
-  height: "60%",
+  width: "100%",
+  height: "100%",
   overflow: "hidden",
 };
 
-return <Widget src="tldraw.near/widget/Tldraw" props={{ style }} />;
+return (
+  <>
+    <h1>canvas</h1>
+    <div style={{ position: "relative", width: "400px", height: "400px" }}>
+      <Widget src="tldraw.near/widget/Tldraw" props={{ style }} />
+    </div>
+  </>
+);
