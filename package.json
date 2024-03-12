@@ -27,7 +27,6 @@
   },
   "workspaces": [
     "gateway",
-    "VM",
     "packages/*"
   ]
 }
