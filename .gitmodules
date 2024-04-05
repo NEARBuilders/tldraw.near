@@ -19,3 +19,6 @@
 [submodule "packages/web4-deploy"]
 	path = packages/web4-deploy
 	url = https://github.com/vgrichina/web4-deploy.git
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/NEARBuilders/near-bos-webcomponent

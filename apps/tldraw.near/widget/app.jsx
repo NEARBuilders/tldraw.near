@@ -21,27 +21,132 @@ return (
           persistanceKey: "tldraw", // string toggle persistance key
           inferDarkMode: false,
           components: {
-            ContextMenu: null, // these can all be widgets that let you swap and edit the code of what they are
-            ActionsMenu: null, // But first, I basically want them all to render and I can add and remove from list
-            HelpMenu: null,
-            ZoomMenu: null,
-            MainMenu: null,
-            Minimap: null,
-            StylePanel: null,
-            PageMenu: null,
-            NavigationPanel: null,
-            Toolbar: null,
-            KeyboardShortcutsDialog: null,
-            QuickActions: null,
-            HelperButtons: null,
-            DebugMenu: null,
-            SharePanel: {
-              src: "efiz.near/widget/print",
-              props: {} // object
+            ContextMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "ContextMenu",
+                color: "#D5A848",
+              },
+            }, // these can all be widgets that let you swap and edit the code of what they are
+            ActionsMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "ActionsMenu",
+                color: "#6F933A",
+              },
+            }, // But first, I basically want them all to render and I can add and remove from list
+            HelpMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "HelpMenu",
+                color: "#44A8CD",
+              },
             },
-            MenuPanel: null,
-            TopPanel: null,
-            Background: null,
+            ZoomMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "ZoomMenu",
+                color: "#7E33C1",
+              },
+            },
+            MainMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "MainMenu",
+                color: "#38244A",
+              },
+            },
+            Minimap: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "Minimap",
+                color: "#727C9F",
+              },
+            },
+            StylePanel: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "StylePanel",
+                color: "#F18EBC",
+              },
+            },
+            PageMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "PageMenu",
+                color: "#4C10EF",
+              },
+            },
+            NavigationPanel: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "NavigationPanel",
+                color: "#7881EC",
+              },
+            },
+            Toolbar: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "Toolbar",
+                color: "#5AA16F",
+              },
+            },
+            KeyboardShortcutsDialog: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "KeyboardShortcutsDialog",
+                color: "#16E6EE",
+              },
+            },
+            QuickActions: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "QuickActions",
+                color: "#E3FDFE",
+              },
+            },
+            HelperButtons: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "HelperButtons",
+                color: "#49DB11",
+              },
+            },
+            DebugMenu: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "DebugMenu",
+                color: "#62C747",
+              },
+            },
+            SharePanel: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "SharePanel",
+                color: "#817B36",
+              }, // objec  t
+            },
+            MenuPanel: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "MenuPanel",
+                color: "#16ECC5",
+              },
+            },
+            TopPanel: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "TopPanel",
+                color: "#F5B8D2",
+              },
+            },
+            Background: {
+              src: "tldraw.near/widget/fill",
+              props: {
+                name: "Background",
+                color: "#67F912",
+              },
+            },
             // what other ones are there?
             // Canvas: null,
           },

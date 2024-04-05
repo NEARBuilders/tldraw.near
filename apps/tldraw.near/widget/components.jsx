@@ -1,4 +1,6 @@
 const [components, setComponents] = useState({
+  // I want expandable textboxes for each of these 
+  // start with border boxes for each
   ContextMenu: null,
   ActionsMenu: null,
   HelpMenu: null,

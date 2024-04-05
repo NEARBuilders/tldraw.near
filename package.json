@@ -6,18 +6,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "init": "git submodule update --init --recursive && pnpm install && pnpm run build:bw",
-    "dev": "concurrently \"pnpm run dev:gateway\" \"pnpm run dev:apps\"",
-    "dev:gateway": "cd near-bos-webcomponent && pnpm run start",
-    "dev:apps": "pnpm run bw workspace dev",
-    "dev:ws": "HOST=localhost PORT=1234 npx y-websocket",
-    "bw": "./node_modules/bos-workspace/bin/bw.js",
-    "build": "pnpm run bw workspace build",
-    "build:vm": "pnpm --filter ./VM run build",
-    "build:bw": "pnpm --filter ./packages/bos-workspace run build"
+    "init": "git submodule update --init --recursive && pnpm install",
+    "bw": "bos-workspace",
+    "dev": "pnpm run dev:gateway && pnpm run dev:apps",
+    "dev:gateway": "cd gateway && pnpm run build",
+    "dev:apps": "pnpm run bw ws dev -g ./gateway/dist"
   },
   "devDependencies": {
-    "bos-workspace": "workspace:*",
+    "bos-workspace": "1.0.0-alpha",
     "concurrently": "^8.2.2"
   },
   "dependencies": {
@@ -26,7 +22,6 @@
     "react-dom": "^18.2.0"
   },
   "workspaces": [
-    "gateway",
-    "packages/*"
+    "gateway"
   ]
 }

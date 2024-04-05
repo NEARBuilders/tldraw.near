@@ -1,5 +1,2 @@
 packages:
-  - 'VM'
   - 'gateway'
-  - 'packages/*'
-  - 'node_modules/bos-workspace'
