@@ -22,3 +22,4 @@
 [submodule "gateway"]
 	path = gateway
 	url = https://github.com/NEARBuilders/near-bos-webcomponent
+	branch = tldraw.near
